@@ -1,0 +1,71 @@
+@import "../../styles/constants.scss";
+.wrapper {
+  width: 100%;
+  height: 80vh;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; // title
+  .leftElements {
+    flex: 1;
+    flex-basis: 0.6fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // margin-bottom: 1rem;
+  }
+
+  // headshot
+  .person {
+    flex: 1;
+    flex-basis: 0.4fr;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // justify-items: flex-end;
+    // align-items: flex-end;
+    align-items: center;
+    img {
+      width: clamp(350px, 30vw, 800px);
+      // width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  //social media icons, certificates
+  // .lowerElements {
+  //   margin-top: 2rem; //
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+
+  //   .socialContact {
+  //     display: flex;
+  //     align-items: center;
+  //     font-size: 2rem;
+  //     gap: 1rem; //gap betwwen icons
+
+  //     > *:hover {
+  //       opacity: 0.8;
+  //       cursor: pointer;
+  //     }
+  //   }
+  //   .certificate {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+
+  //     img {
+  //       margin-bottom: 1rem;
+  //       width: 3.5rem;
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,15 @@
+@import "./constants.scss";
+.container {
+  overflow-x: clip; //content that exceeds the width of the container will becut off and not visible
+  position: relative;
+  color: $font-color;
+  background-image: $background;
+  height: 150vh;
+  //make it responsive
+  // :nth-child(1) {
+  //   z-index: 1;
+  // }
+  // :nth-child(2) {
+  //   z-index: -1;
+  // }
+}

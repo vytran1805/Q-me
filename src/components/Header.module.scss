@@ -14,25 +14,30 @@
     font-weight: 500;
 
     .name {
+      font-size: 2rem;
       display: flex;
       align-items: flex-end;
-      img {
-        margin-right: 5px;
-        width: 30px;
-      }
-      p {
-        font-size: 18px;
-        background: linear-gradient(
-          to right,
-          #f51111,
-          #ef4343,
-          #ea4fa4,
-          #f50808
-        );
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-clip: none;
-      }
+      background: linear-gradient(to right, #f51111, #ef4343, #ea4fa4, #f50808);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: none;
+      // img {
+      //   margin-right: 5px;
+      //   width: 30px;
+      // }
+      // p {
+      //   font-size: 18px;
+      //   background: linear-gradient(
+      //     to right,
+      //     #f51111,
+      //     #ef4343,
+      //     #ea4fa4,
+      //     #f50808
+      //   );
+      //   -webkit-text-fill-color: transparent;
+      //   -webkit-background-clip: text;
+      //   background-clip: none;
+      // }
     }
     .menu {
       // target the sm and md screen: diplay flex column for nav bar

@@ -1,11 +1,11 @@
 import css from "./Header.module.scss";
 // import { BsPerson } from "react-icons/bs";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../utils/motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useState } from "react";
 import useHeaderShadow from "../hooks/useHeaderShadow";
-// import { TbLetterQ } from "react-icons/tb";
+import { TbLetterQ } from "react-icons/tb";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -23,8 +23,9 @@ const Header = () => {
     >
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>
-          <img src="./public/img/letter-q.png" alt="logo" />
-          {/* <p>me</p> */}
+          {/* <img src="./public/img/letter-q.png" alt="logo" /> */}
+          {/* <p>Q</p> */}
+          <TbLetterQ />
         </div>
         <ul
           style={getMenuStyles(menuOpened)}

@@ -15,12 +15,23 @@ const Hero = () => {
         viewport={{ once: false, amout: 0.25 }}
         className={`innerWidth ${css.container}`}
       >
+        {/* headshot */}
+        <motion.div
+          variants={
+            document.documentElement.clientWidth <= 880
+              ? fadeIn("up", "spring", 0.2, 1.5)
+              : fadeIn("down", "spring", 0.2, 1.5)
+          }
+          className={css.person}
+        >
+          <img src={"./img/bot.png"} alt="" />
+        </motion.div>
         {/* left elements */}
         <div className={css.leftElements}>
           <motion.span
             // fade in to the right with the animation type of tween, the delay of 2sec, duration 1sec
             variants={fadeIn("right", "tween", 0.2, 1)}
-            className="primaryText"
+            className={`primaryText ${css.title}`}
           >
             Say goodbye to menu confusion and elevate your customers&apos;
             experience!
@@ -45,20 +56,13 @@ const Hero = () => {
             unfamiliar cuisines, and savor every moment with Q-me, your trusted
             culinary companion. */}
           </motion.span>
-          <button className={`button ${css.button}`}>Get a Demo</button>
+          <motion.div
+            variants={fadeIn("up", "spring", 0.3, 2.0)}
+            className={css.button}
+          >
+            <button className={`button ${css.button}`}>Get a Demo</button>
+          </motion.div>
         </div>
-
-        {/* headshot */}
-        <motion.div
-          variants={
-            document.documentElement.clientWidth <= 880
-              ? fadeIn("up", "spring", 0.2, 1.5)
-              : fadeIn("down", "spring", 0.2, 1.5)
-          }
-          className={css.person}
-        >
-          <img src={"./img/showCase1.png"} alt="" />
-        </motion.div>
 
         {/* lower elements */}
         {/* <div className={css.lowerElements}>

@@ -5,6 +5,7 @@ import { getMenuStyles, headerVariants } from "../utils/motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useState } from "react";
 import useHeaderShadow from "../hooks/useHeaderShadow";
+// import { TbLetterQ } from "react-icons/tb";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -22,7 +23,8 @@ const Header = () => {
     >
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>
-          <strong>Q-me</strong>
+          <img src="./public/img/letter-q.png" alt="logo" />
+          {/* <p>me</p> */}
         </div>
         <ul
           style={getMenuStyles(menuOpened)}
